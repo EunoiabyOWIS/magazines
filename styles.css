@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif; /* Fallback to Arial if custom font is not available */
     background-color: #f1d0d0;
     color: #333;
     display: flex;
@@ -16,16 +16,18 @@ body {
     min-height: 100vh;
 }
 
+/* Apply to the h1 as well */
+h1 {
+    font-family: 'JunigardenSerif', Arial, sans-serif; 
+    margin-bottom: 20px;
+    font-size: 5em;
+    color: #333;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
     text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #333;
 }
 
 .grid {
@@ -74,4 +76,13 @@ h1 {
 .view-past-editions {
     margin-top: 20px;
     text-align: center;
+}
+
+@font-face {
+    font-family: 'JunigardenSerif';
+    src: url('JunigardenSerif_PERSONAL_USE_ONLY.woff2') format('woff2'),
+         url('JunigardenSerif_PERSONAL_USE_ONLY.woff') format('woff'),
+         url('JunigardenSerif_PERSONAL_USE_ONLY.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
