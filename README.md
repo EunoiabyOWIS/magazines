@@ -1,1 +1,1 @@
-Github Repository for hosting all of the Eunoia Magazines
+Github Repository for hosting all the Eunoia Magazines
